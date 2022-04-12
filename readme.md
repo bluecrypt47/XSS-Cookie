@@ -21,5 +21,6 @@ Mục lục:
   - `strict` - cookie chỉ được gửi đến trang web mà nó bắt nguồn.
   - `Lax` - cũng tương tự `strict`ngoại trừ việc cookie được gửi khi người dùng điều hướng đến trang web gốc của cookie (Nhấp vào liên kết bên ngoài).
   - `None` - cookie được gửi theo cả yêu cầu bắt nguồn và yêu cầu trên nhiều trang web, nhưng chỉ trong ngữ cảnh an toàn (nếu `SameSite=None` thì cũng phải khai báo thuộc tính `Secure` ở sau).
+  
 Và một số thuộc tính khác...
 
