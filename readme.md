@@ -24,3 +24,12 @@ Mục lục:
   
 Và một số thuộc tính khác...
 
+## Reflect XSS
+Đây là lỗ hổng phổ `XSS` biến nhất. Kẻ tấn công phải gửi `payload` cho nạn nhân (`payload` này là 1 phần của yêu cầu được gửi đến máy chủ web và được phản hồi `HTTP`). `Reflect XSS` không phải là một cuộc tấn công liên tục, nên kẻ tấn công phải cung cấp payload cho mỗi nạn nhân.
+
+## Stored XSS 
+Là loại tấn công `XSS` gây thiệt hại nhiều nhất. Kẻ tấn công truyền các payload - được lưu trữ vĩnh viễn trên ứng dụng đích, chẳng hạn như `DB`.
+
+## Dom XSS
+Là loại tấn công XSS nâng cao, có thể thực hiện được khi tập lệnh phía máy khách của ứng dụng web ghi dữ liệu do người dùng cung cấp vào Document Object Model (DOM).
+
