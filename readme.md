@@ -1,10 +1,10 @@
 Người thực hiện: Lê Trần Văn Chương
 Ngày: 12/04/2022
 Mục lục:
-- Attributes của Cookie
-- Reflect XSS
-- Stored XSS 
-- Dom XSS
+- [Attributes của Cookie](#attributes-của-cookie)
+- [Reflect XSS](#reflect-xss)
+- [Stored XSS](#stored-xss)
+- [Dom XSS](#dom-xss)
 
 ## Attributes của Cookie
 - Cookie có cú pháp như sau `[Name: Value]`.
