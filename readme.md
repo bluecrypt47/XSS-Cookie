@@ -5,7 +5,7 @@ Mục lục:
 - [Reflect XSS](#reflect-xss)
 - [Stored XSS](#stored-xss)
 - [Dom XSS](#dom-xss)
-- [Ví dụ](#Ví-dụ)
+- [Ví dụ](#ví-dụ)
 
 ## Attributes của Cookie
 - Cookie có cú pháp như sau `[Name: Value]`.
@@ -37,7 +37,7 @@ Là loại tấn công XSS nâng cao, có thể thực hiện được khi tập
 ## Ví dụ
 Đây là lab code đã bị lỗ hổng `XSS`.
 
-- Tôi chèn ` đoạn `script` vào `username` trong lúc `Register`: `<script>alert("Test")</script>Test`
+- Tôi chèn 1 đoạn `script` vào `username` trong lúc thực hiện chức năng `Register`: `<script>alert("Test")</script>Test`
 ![Hinh 1.](~/../img/1.png)
 
 - Sau khi chèn xong thì ta thấy dữ liệu của `user` vừa register sẽ hiện ra bên dưới và ta không thấy đoạn `script` nào hết. Nhưng khi vào kiểm tra bên trong `source` sẽ thấy đoạn `script` ở trong đó.
