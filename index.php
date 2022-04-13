@@ -54,7 +54,7 @@
 
             <h2>Register</h2>
 
-            <input type="text" name="email" placeholder="Email" value="" required />
+            <input type="email" name="email" placeholder="Email" value="" required />
 
             <input type="password" name="password" placeholder="Password" value="" required />
 

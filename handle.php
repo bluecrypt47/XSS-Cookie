@@ -9,10 +9,10 @@ mysqli_set_charset($conn, "utf8");
 
 // Dùng isset để kiểm tra Form
 if (isset($_POST['register'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $email = $_POST['email'];
-
+    $strUsername = trim($_POST['username']);
+    $password = md5(addslashes(trim($_POST['password'])));
+    $email = trim($_POST['email']);
+    $username = htmlentities($strUsername, ENT_COMPAT, 'UTF-8');
 
     if (empty($username)) {
         array_push($errors, "Username is required");

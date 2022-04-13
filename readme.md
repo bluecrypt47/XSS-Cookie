@@ -6,6 +6,7 @@ Mục lục:
 - [Stored XSS](#stored-xss)
 - [Dom XSS](#dom-xss)
 - [Ví dụ](#ví-dụ)
+- [Nguyên nhân](#nguyên-nhân)
 
 ## Attributes của Cookie
 - Cookie có cú pháp như sau `[Name: Value]`.
@@ -45,6 +46,18 @@ Là loại tấn công XSS nâng cao, có thể thực hiện được khi tập
 
 - Bây giờ, load lại web thì đoạn `alert` đã truyền trước đó sẽ hiện lên.
 ![Hinh 3.](~/../img/3.png)
+
+## Nguyên nhân
+- Lỗi xảy ra khi web bị lỗ hổng bảo mật như hệ thống cho phép người dùng nhập và lưu trữ các đoạn mã độc trên server mà không kiểm tra hay xác thực đầu vào.
+- Khắc phục:
+  - `Xác thực đầu vào` - Mọi thứ được nhập bởi người dùng phải được xác thực chính xác.
+  - `Lọc đầu vào` của người dùng - ìm kiếm các từ khóa nguy hiểm trong mục nhập của người dùng và xóa chúng hoặc thay thế chúng bằng các chuỗi trống. (Các thẻ `<script> </ script>`, `Javascript` hoặc các Đánh dấu của `HTML`).
+
+  Và một số phương pháp khác...
+
+- Trong code lab này, tôi thay thế các ký tự trong `username` bằng hàm `htmlentities()` hàm này sẽ chuyển đổi các ký tự như `<, >, &,...` thành ký tự `HTML entities`.
+![Hinh 4.](~/../img/4.png)
+![Hinh 5.](~/../img/5.png)
 
 
 
