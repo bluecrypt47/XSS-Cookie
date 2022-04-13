@@ -58,7 +58,7 @@
 
             <input type="password" name="password" placeholder="Password" value="" required />
 
-            <input type="text" name="username" placeholder="username" value="" required>
+            <input type="text" name="username" placeholder="username" value="" required style="width: 300px;">
 
             <input type="submit" name="register" value="Register" />
 

@@ -5,6 +5,7 @@ Mục lục:
 - [Reflect XSS](#reflect-xss)
 - [Stored XSS](#stored-xss)
 - [Dom XSS](#dom-xss)
+- [Ví dụ](#Ví-dụ)
 
 ## Attributes của Cookie
 - Cookie có cú pháp như sau `[Name: Value]`.
@@ -32,4 +33,18 @@ Là loại tấn công `XSS` gây thiệt hại nhiều nhất. Kẻ tấn công
 
 ## Dom XSS
 Là loại tấn công XSS nâng cao, có thể thực hiện được khi tập lệnh phía máy khách của ứng dụng web ghi dữ liệu do người dùng cung cấp vào Document Object Model (DOM).
+
+## Ví dụ
+Đây là lab code đã bị lỗ hổng `XSS`.
+
+- Tôi chèn ` đoạn `script` vào `username` trong lúc `Register`: `<script>alert("Test")</script>Test`
+![Hinh 1.](~/../img/1.png)
+
+- Sau khi chèn xong thì ta thấy dữ liệu của `user` vừa register sẽ hiện ra bên dưới và ta không thấy đoạn `script` nào hết. Nhưng khi vào kiểm tra bên trong `source` sẽ thấy đoạn `script` ở trong đó.
+![Hinh 2.](~/../img/2.png)
+
+- Bây giờ, load lại web thì đoạn `alert` đã truyền trước đó sẽ hiện lên.
+![Hinh 3.](~/../img/3.png)
+
+
 
